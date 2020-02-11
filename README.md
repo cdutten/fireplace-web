@@ -1,6 +1,6 @@
 # Fireplace-web
 
-![](img/logo.png)
+![](src/assets/logo.png)
 
 ## The problem:
   
