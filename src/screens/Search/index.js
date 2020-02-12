@@ -27,6 +27,10 @@ const Search = () => {
     setSearchValues(values);
   }
 
+  /**
+   * @param {number} index
+   * @param {React.ChangeEvent} event
+   */
   const handleInputChange = (index, event) => {
     addSearchValue(index, event.target.value);
 
@@ -36,10 +40,18 @@ const Search = () => {
     }
   };
 
+  /**
+   * @param {number} index
+   */
   function destroyInput(index) {
     searchValues.splice(index, 1);
   }
 
+  /**
+   * @param {number} index
+   * @param {React.ChangeEvent} event
+   * @return {undefined}
+   */
   function handleInputBlur(index, event) {
     const isEmpty = event.target.value === '';
     const isTheLastOne = searchValues.length === index + 1;
