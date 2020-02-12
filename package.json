@@ -28,7 +28,7 @@
     "build": "webpack",
     "start": "webpack-dev-server --open",
     "test": "echo \"No test integration yet\" && exit 0",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "eslintConfig": {
     "extends": "react-app"
